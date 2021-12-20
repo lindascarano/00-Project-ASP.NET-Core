@@ -1,0 +1,18 @@
+﻿<!--Il file .csproj contiene le istruzioni per la piattaforma di build, che così potrà compilare correttamente il progetto.
+Si include in questo file anche l'elenco dei file statici da includere all'atto della pubblicazione, oppure dei file di 
+codice da escludere dalla compilazione-->
+
+<Project Sdk="Microsoft.NET.Sdk.Web"> <!--Project SDK indica alla piattaforma di build come compilare una applicazione ASP.NET Core.-->
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework> <!--TragetFramework specifica la versione .NET Core che intendiamo usare-->
+  </PropertyGroup>
+
+  <ItemGroup> <!--Elenco di pacchetti NugGet che intendiamo usare nella nostra applicazione-->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.1" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>
+
